@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: abm_raw
+    database: kroll_catalog
+    schema: input_schema
+    tables:
+      - name: ga4_raw
+      - name: salesforce_raw
+      - name: eloqua_raw
+      
