@@ -10,7 +10,7 @@ SELECT
     campaign_id,
     email_send_id,
     sent_date,
-    sent_datetime
+    sent_datetime,
     open_datetime,
     click_datetime,
     CASE

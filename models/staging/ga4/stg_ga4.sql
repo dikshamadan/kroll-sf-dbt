@@ -19,6 +19,7 @@ SELECT
     campaign_source AS utm_source,
     content_id,
     keyword_id,
+    geo_id,
     city31 as city,
     country32 as country,
     global_region as region,
