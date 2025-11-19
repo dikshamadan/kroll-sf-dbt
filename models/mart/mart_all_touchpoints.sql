@@ -77,15 +77,15 @@ select
         a.cost,
         a.service_line_code
 from all_touchpoints a
-JOIN
+LEFT JOIN
 {{ref ('dim_person')}} p ON a.person_id = p.person_id
-JOIN
+LEFT JOIN
 {{ref ('dim_campaign')}} c ON c.campaign_id = a.campaign_id
-JOIN
+LEFT JOIN
 {{ref ('dim_content')}} c ON c.content_id = a.content_id
-JOIN
+LEFT JOIN
 {{ref ('dim_geography')}} g on g.geo_id = a.geo_id
-join
+LEFT join
 {{ref ('bridge_service_line_abm_account')}} b ON b.account_id = a.account_id
-join
+LEFT join
 {{ref ('dim_date')}} d on d.event_date = a.tp_datetime
